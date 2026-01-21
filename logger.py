@@ -19,7 +19,7 @@ BRIGHT_DATA_PROXY_USER = os.getenv('BRIGHT_DATA_PROXY_USER', '')
 BRIGHT_DATA_PROXY_PASS = os.getenv('BRIGHT_DATA_PROXY_PASS', '')
 BRIGHT_DATA_PROXY_HOST = os.getenv('BRIGHT_DATA_PROXY_HOST', 'brd.superproxy.io')
 BRIGHT_DATA_PROXY_PORT = os.getenv('BRIGHT_DATA_PROXY_PORT', '33335')
-IPLOGGER_URL = os.getenv('IPLOGGER_URL', 'https://iplogger.com/2sijK4')
+IPLOGGER_URL = os.getenv('IPLOGGER_URL')
 MAX_WORKERS = int(os.getenv('MAX_WORKERS', '10'))
 DELAY = float(os.getenv('DELAY_BETWEEN_REQUESTS', '0.3'))
 
@@ -137,3 +137,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
