@@ -29,7 +29,7 @@ Bright Dataのプロキシがproxycheck.io（v3 API）などの検知サービ�
 ## インストール
 
 ```bash
-git clone https://github.com/yourusername/brightdata-proxy-detection-test.git
+git clone https://github.com/harumaki4649/brightdata-proxy-detection-test.git
 cd brightdata-proxy-detection-test
 pip install tqdm python-dotenv
 ```
@@ -102,6 +102,14 @@ Top 5 Countries:
   Argentina: 23 (4.8%)
 ```
 
+## コストパフォーマンス
+
+今回の検証にかかったコスト
+
+- **Bright Data**: 約30MB使用で約$0.23（レジデンシャルプロキシ $8/GB）
+- **proxycheck.io**: 無料枠内（1,000リクエスト/日）
+- **合計**: 約$0.23で475個のIPを検証
+
 ## API v3の変更点
 
 proxycheck.io v2からv3への主な変更点
@@ -129,7 +137,7 @@ MIT License - 詳細は[LICENSE](LICENSE)ファイルを参照
 
 ## 参考
 
-- [Qiita記事: 検証レポート](リンク)
+- [Qiita記事: 検証レポート](https://qiita.com/harupython/items/3a52fb00f816c33598ff)
 - [Bright Data公式](https://brightdata.com/)
 - [proxycheck.io API v3](https://proxycheck.io/api/)
 
